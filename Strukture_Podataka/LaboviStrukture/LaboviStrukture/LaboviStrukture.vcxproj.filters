@@ -20,7 +20,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zadatak1.c">
+    <ClCompile Include="Zadatak2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
