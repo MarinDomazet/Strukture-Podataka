@@ -3,7 +3,7 @@ A. dinamièki dodaje novi element na poèetak liste,
 B. ispisuje listu,
 C. dinamièki dodaje novi element na kraj liste,
 D. pronalazi element u listi (po prezimenu),
-E. briše odreðeni element iz liste,
+. briše odreðeni element iz liste,
 U zadatku se ne smiju koristiti globalne varijable.
 */
 #define _CRT_SECURE_NO_WARNINGS
