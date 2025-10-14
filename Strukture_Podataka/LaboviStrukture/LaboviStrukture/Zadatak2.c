@@ -7,107 +7,139 @@ E. briše odreðeni element iz liste,
 U zadatku se ne smiju koristiti globalne varijable.
 */
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#define FILE_NOT_OPENED (-1)
+#define MAX_LINE (1024)
+#define WORD 128
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Definicija èvora jednostruko povezane liste.
+// Svaki èvor sadrži ime, prezime, godinu roðenja i pokazivaè na sljedeæi element.
 typedef struct Node {
-	char ime[20], prezime[20];
-	int God_Rod;
-	struct Node* next;
-}Node;
+    char name[WORD];                // Polje za ime osobe
+    char lastName[WORD];            // Polje za prezime osobe
+    int year;                       // Godina roðenja
+    struct Node* next;              // Pokazivaè na sljedeæi element u listi
+} Node;
 
-Node* Dodaj_PrviClan(Node* head, char ime[20], char prezime[20], int God_Rod);
-void Dodaj_ZadnjiClan(Node* head, char ime[20], char prezime[20], int God_Rod);
-void Trazi_Prezime(Node* head, char prezime[20]);
-void Ispis(Node* head);
-void Brisanje(Node** Head, char prezime[20]);
+Node* Add_First(Node* head, char name[WORD], char lastName[WORD], int year);
+void Add_Last(Node* head, char name[WORD], char lastName[WORD], int year);
+void Find_LastName(Node* head, char lastName[WORD]);
+void Print_List(Node* head);
+void Delete(Node** head, char lastName[WORD]);
 
 int main() {
 
-	Node* head = NULL;
+    Node* head = NULL;  // Inicijalno lista nema elemenata
 
-	head = Dodaj_PrviClan(head, "Marin","Domazet",2005);
-	head = Dodaj_PrviClan(head, "Petar", "Kresimir", 1991);
-	Ispis(head);
-	Dodaj_ZadnjiClan(head, "Marko", "Ivandic", 2017);
-	Trazi_Prezime(head, "Kresimir");
-	Brisanje(&head, "Kresimir");
-	Ispis(head);
+    // Dodavanje prvih èlanova na poèetak liste
+    head = Add_First(head, "Marin", "Domazet", 2005);
+    head = Add_First(head, "Petar", "Kresimir", 1991);
 
-	return 0;
+    // Ispis trenutnog stanja liste
+    Print_List(head);
+
+    // Dodavanje novog èlana na kraj liste
+    Add_Last(head, "Marko", "Ivandic", 2017);
+
+    // Traženje èlana po prezimenu
+    Find_LastName(head, "Kresimir");
+
+    // Brisanje odreðenog èlana iz liste
+    Delete(&head, "Kresimir");
+
+    // Ispis liste nakon brisanja
+    Print_List(head);
+
+    return 0;
 }
 
-Node* Dodaj_PrviClan(Node* head, char ime[20], char prezime[20], int God_Rod) {
-	Node* FirstElement;
-	FirstElement = malloc(sizeof(Node));
-	strcpy(FirstElement->ime, ime);
-	strcpy(FirstElement->prezime, prezime);
-	FirstElement->God_Rod = God_Rod;
 
-	FirstElement->next = head;
-	head = FirstElement;
+// Dodaje novi èvor na poèetak liste
+Node* Add_First(Node* head, char name[WORD], char lastName[WORD], int year) {
+    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi èvor
 
-	return FirstElement;
+    // Kopiranje vrijednosti u novi èvor
+    strcpy(newNode->name, name);
+    strcpy(newNode->lastName, lastName);
+    newNode->year = year;
+
+    // Novi èvor pokazuje na dosadašnji prvi element
+    newNode->next = head;
+
+    // Novi èvor postaje novi poèetak liste
+    return newNode;
 }
 
-void Dodaj_ZadnjiClan(Node* head, char ime[20], char prezime[20], int God_Rod) {
-	Node* temp = head;
+// Dodaje novi èvor na kraj liste
+void Add_Last(Node* head, char name[WORD], char lastName[WORD], int year) {
+    Node* temp = head;                        // Pomoæni pokazivaè za prolazak kroz listu
 
-	Node* LastElement;
-	LastElement = (Node*)malloc(sizeof(Node));
-	strcpy(LastElement->ime, ime);
-	strcpy(LastElement->prezime, prezime);
-	LastElement->God_Rod = God_Rod;
-	LastElement->next = NULL;
+    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi èvor
+    strcpy(newNode->name, name);
+    strcpy(newNode->lastName, lastName);
+    newNode->year = year;
+    newNode->next = NULL;                     // Zadnji element uvijek pokazuje na NULL
 
-	while (temp) {
-		if (temp->next == NULL) {
-			temp->next = LastElement;
-			return;
-		}
-		temp = temp->next;
-	}
+    // Ako lista postoji, prolazi do kraja
+    while (temp) {
+        if (temp->next == NULL) {             // Kad naðe zadnji element
+            temp->next = newNode;             // Povezuje ga s novim
+            return;
+        }
+        temp = temp->next;                    // Inaèe ide na sljedeæi element
+    }
 }
 
-void Ispis(Node* head) {
-	Node* temp1 = head;
-	while(temp1){
-		if (temp1 == NULL) {
-			printf("Nema clanova niza");
-			return;
-		}
-		printf("%s\n%s\n%d\n\n", temp1->ime, temp1->prezime, temp1->God_Rod);
-		temp1 = temp1->next;
-	}
+// Ispisuje sve èlanove liste
+void Print_List(Node* head) {
+    Node* temp = head;
+    if (temp == NULL) {
+        printf("Lista je prazna.\n");
+        return;
+    }
+
+    while (temp) {
+        printf("Ime: %s\nPrezime: %s\nGodina roðenja: %d\n\n",
+            temp->name, temp->lastName, temp->year);
+        temp = temp->next;
+    }
 }
 
-void Trazi_Prezime(Node* head, char prezime[20]) {
-	Node* temp2 = head;
-	while (temp2) {
-		if (strcmp(temp2->prezime, prezime) == 0) {
-			printf("Element s trazenim prezimenom \"%s\" je pronaden.\n\n",prezime);
-			return;
-		}
-		temp2 = temp2->next;
-	}
+// Traži osobu po prezimenu u listi
+void Find_LastName(Node* head, char lastName[WORD]) {
+    Node* temp = head;
+    while (temp) {
+        if (strcmp(temp->lastName, lastName) == 0) {
+            printf("Element s prezimenom \"%s\" je pronaðen.\n\n", lastName);
+            return;
+        }
+        temp = temp->next;
+    }
+    printf("Element s prezimenom \"%s\" nije pronaðen.\n\n", lastName);
 }
 
-void Brisanje(Node** head, char prezime[20]) {
-	Node* temp3 = *head;
-	Node* prethodni = NULL;
-	while (temp3) {
-		if (!strcmp(temp3->prezime, prezime)) {
-			if (prethodni == NULL) {
-				*head = temp3->next;
-			}
-			else {
-				prethodni->next = temp3->next;
-			}
-			free(temp3);
-			break;
-		}
-		prethodni = temp3;
-		temp3 = temp3->next;
-	}
+// Briše element iz liste po prezimenu
+void Delete(Node** head, char lastName[WORD]) {
+    Node* current = *head;        // Trenutni element
+    Node* previous = NULL;        // Pokazivaè na prethodni element
+
+    while (current) {
+        if (strcmp(current->lastName, lastName) == 0) {  // Ako se prezime podudara
+            if (previous == NULL) {
+                *head = current->next;                   // Ako se briše prvi element
+            }
+            else {
+                previous->next = current->next;          // Prespaja se preko elementa koji se briše
+            }
+            free(current);                               // Oslobaða memoriju
+            printf("Element s prezimenom \"%s\" je obrisan.\n\n", lastName);
+            return;
+        }
+        previous = current;
+        current = current->next;
+    }
+    printf("Element s prezimenom \"%s\" nije pronaðen.\n\n", lastName);
 }
