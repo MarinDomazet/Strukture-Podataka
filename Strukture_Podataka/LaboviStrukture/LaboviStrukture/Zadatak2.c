@@ -123,23 +123,23 @@ void Find_LastName(Node* head, char lastName[WORD]) {
 
 // Briše element iz liste po prezimenu
 void Delete(Node** head, char lastName[WORD]) {
-    Node* current = *head;        // Trenutni element
+    Node* temp = *head;        // Trenutni element
     Node* previous = NULL;        // Pokazivaè na prethodni element
 
-    while (current) {
-        if (strcmp(current->lastName, lastName) == 0) {  // Ako se prezime podudara
+    while (temp) {
+        if (strcmp(temp->lastName, lastName) == 0) {  // Ako se prezime podudara
             if (previous == NULL) {
-                *head = current->next;                   // Ako se briše prvi element
+                *head = temp->next;                   // Ako se briše prvi element
             }
             else {
-                previous->next = current->next;          // Prespaja se preko elementa koji se briše
+                previous->next = temp->next;          // Prespaja se preko elementa koji se briše
             }
-            free(current);                               // Oslobaða memoriju
+            free(temp);                               // Oslobaða memoriju
             printf("Element s prezimenom \"%s\" je obrisan.\n\n", lastName);
             return;
         }
-        previous = current;
-        current = current->next;
+        previous = temp;
+        temp = temp->next;
     }
     printf("Element s prezimenom \"%s\" nije pronaðen.\n\n", lastName);
 }
