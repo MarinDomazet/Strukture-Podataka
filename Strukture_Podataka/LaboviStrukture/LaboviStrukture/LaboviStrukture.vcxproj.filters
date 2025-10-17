@@ -18,9 +18,12 @@
     <Text Include="Studenti.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="Lista.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zadatak2.c">
+    <ClCompile Include="Zadatak3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

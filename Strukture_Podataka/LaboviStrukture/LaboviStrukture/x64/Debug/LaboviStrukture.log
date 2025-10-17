@@ -1,2 +1,3 @@
-﻿  Zadatak2.c
+﻿  Zadatak3.c
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zadatak3.c(177,9): warning C4098: 'Add_Behind': 'void' function returning a value
   LaboviStrukture.vcxproj -> C:\Users\marin\Strukture_Podataka\LaboviStrukture\x64\Debug\LaboviStrukture.exe
