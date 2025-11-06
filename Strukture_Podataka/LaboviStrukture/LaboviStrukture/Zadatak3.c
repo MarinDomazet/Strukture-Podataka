@@ -1,9 +1,9 @@
-/*3. Prethodnom zadatku dodati funkcije:
-A. dinamièki dodaje novi element iza odreðenog elementa,
-B. dinamièki dodaje novi element ispred odreðenog elementa,
+ï»¿/*3. Prethodnom zadatku dodati funkcije:
+A. dinamiï¿½ki dodaje novi element iza odreï¿½enog elementa,
+B. dinamiï¿½ki dodaje novi element ispred odreï¿½enog elementa,
 C. sortira listu po prezimenima osoba,
 D. upisuje listu u datoteku,
-E. èita listu iz datoteke.
+E. ï¿½ita listu iz datoteke.
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -15,13 +15,13 @@ E. èita listu iz datoteke.
 #include <stdlib.h>
 #include <string.h>
 
-// Definicija èvora jednostruko povezane liste.
-// Svaki èvor sadrži ime, prezime, godinu roðenja i pokazivaè na sljedeæi element.
+// Definicija ï¿½vora jednostruko povezane liste.
+// Svaki ï¿½vor sadrï¿½i ime, prezime, godinu roï¿½enja i pokazivaï¿½ na sljedeï¿½i element.
 typedef struct Node {
     char name[WORD];                // Polje za ime osobe
     char lastName[WORD];            // Polje za prezime osobe
-    int year;                       // Godina roðenja
-    struct Node* next;              // Pokazivaè na sljedeæi element u listi
+    int year;                       // Godina roï¿½enja
+    struct Node* next;              // Pokazivaï¿½ na sljedeï¿½i element u listi
 } Node;
 
 Node* Add_First(Node* head, char name[WORD], char lastName[WORD], int year);
@@ -30,7 +30,7 @@ Node* Find_LastName(Node* head, char lastName[WORD]);
 void Print_List(Node* head);
 void Delete(Node** head, char lastName[WORD]);
 
-void Add_Behind(Node* head,char lastNameSearch[WORD], char name[WORD], char lastName[WORD], int year);
+void Add_Behind(Node* head, char lastNameSearch[WORD], char name[WORD], char lastName[WORD], int year);
 void Add_Front(Node** head, char lastNameSearch[WORD], char name[WORD], char lastName[WORD], int year);
 void Add_ToFile(Node* head);
 Node* Read_FromFile(Node* head);
@@ -40,7 +40,7 @@ int main() {
 
     Node* head = NULL;  // Inicijalno lista nema elemenata
 
-    // Dodavanje prvih èlanova na poèetak liste
+    // Dodavanje prvih ï¿½lanova na poï¿½etak liste
     head = Add_First(head, "Marin", "Domazet", 2005);
     head = Add_First(head, "Petar", "Kresimir", 1991);
     Add_Behind(head, "Kresimir", "Luka", "Baric", 2023);
@@ -49,13 +49,13 @@ int main() {
     // Ispis trenutnog stanja liste
     Print_List(head);
 
-    // Dodavanje novog èlana na kraj liste
+    // Dodavanje novog ï¿½lana na kraj liste
     Add_Last(head, "Marko", "Ivandic", 2017);
 
-    // Traženje èlana po prezimenu
+    // Traï¿½enje ï¿½lana po prezimenu
     Find_LastName(head, "Kresimir");
 
-    // Brisanje odreðenog èlana iz liste
+    // Brisanje odreï¿½enog ï¿½lana iz liste
     Delete(&head, "Kresimir");
 
     // Ispis liste nakon brisanja
@@ -73,27 +73,27 @@ int main() {
 }
 
 
-// Dodaje novi èvor na poèetak liste
+// Dodaje novi ï¿½vor na poï¿½etak liste
 Node* Add_First(Node* head, char name[WORD], char lastName[WORD], int year) {
-    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi èvor
+    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi ï¿½vor
 
-    // Kopiranje vrijednosti u novi èvor
+    // Kopiranje vrijednosti u novi ï¿½vor
     strcpy(newNode->name, name);
     strcpy(newNode->lastName, lastName);
     newNode->year = year;
 
-    // Novi èvor pokazuje na dosadašnji prvi element
+    // Novi ï¿½vor pokazuje na dosadaï¿½nji prvi element
     newNode->next = head;
 
-    // Novi èvor postaje novi poèetak liste
+    // Novi ï¿½vor postaje novi poï¿½etak liste
     return newNode;
 }
 
-// Dodaje novi èvor na kraj liste
+// Dodaje novi ï¿½vor na kraj liste
 void Add_Last(Node* head, char name[WORD], char lastName[WORD], int year) {
-    Node* temp = head;                        // Pomoæni pokazivaè za prolazak kroz listu
+    Node* temp = head;                        // Pomoï¿½ni pokazivaï¿½ za prolazak kroz listu
 
-    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi èvor
+    Node* newNode = malloc(sizeof(Node));     // Alokacija memorije za novi ï¿½vor
     strcpy(newNode->name, name);
     strcpy(newNode->lastName, lastName);
     newNode->year = year;
@@ -101,15 +101,15 @@ void Add_Last(Node* head, char name[WORD], char lastName[WORD], int year) {
 
     // Ako lista postoji, prolazi do kraja
     while (temp) {
-        if (temp->next == NULL) {             // Kad naðe zadnji element
+        if (temp->next == NULL) {             // Kad naï¿½e zadnji element
             temp->next = newNode;             // Povezuje ga s novim
             return;
         }
-        temp = temp->next;                    // Inaèe ide na sljedeæi element
+        temp = temp->next;                    // Inaï¿½e ide na sljedeï¿½i element
     }
 }
 
-// Ispisuje sve èlanove liste
+// Ispisuje sve ï¿½lanove liste
 void Print_List(Node* head) {
     Node* temp = head;
     if (temp == NULL) {
@@ -118,7 +118,7 @@ void Print_List(Node* head) {
     }
 
     while (temp) {
-        printf("Ime: %s\nPrezime: %s\nGodina roðenja: %d\n\n",
+        printf("Ime: %s\nPrezime: %s\nGodina roï¿½enja: %d\n\n",
             temp->name, temp->lastName, temp->year);
         temp = temp->next;
     }
@@ -126,83 +126,83 @@ void Print_List(Node* head) {
     printf("\n\n\n");
 }
 
-// Traži osobu po prezimenu u listi
+// Traï¿½i osobu po prezimenu u listi
 Node* Find_LastName(Node* head, char lastName[WORD]) {
     Node* temp = head;
     while (temp) {
         if (strcmp(temp->lastName, lastName) == 0) {
-            printf("Element s prezimenom \"%s\" je pronaðen.\n\n", lastName);
+            printf("Element s prezimenom \"%s\" je pronaï¿½en.\n\n", lastName);
             return temp;
         }
         temp = temp->next;
     }
-    printf("Element s prezimenom \"%s\" nije pronaðen.\n\n", lastName);
+    printf("Element s prezimenom \"%s\" nije pronaï¿½en.\n\n", lastName);
     return NULL;
 }
 
-// Briše element iz liste po prezimenu
+// Briï¿½e element iz liste po prezimenu
 void Delete(Node** head, char lastName[WORD]) {
     Node* temp = *head;                               // Trenutni element
-    Node* previous = NULL;                            // Pokazivaè na prethodni element
+    Node* previous = NULL;                            // Pokazivaï¿½ na prethodni element
 
     while (temp) {
         if (strcmp(temp->lastName, lastName) == 0) {  // Ako se prezime podudara
             if (previous == NULL) {
-                *head = temp->next;                   // Ako se briše prvi element
+                *head = temp->next;                   // Ako se briï¿½e prvi element
             }
             else {
-                previous->next = temp->next;          // Prespaja se preko elementa koji se briše
+                previous->next = temp->next;          // Prespaja se preko elementa koji se briï¿½e
             }
-            free(temp);                               // Oslobaða memoriju
+            free(temp);                               // Oslobaï¿½a memoriju
             printf("Element s prezimenom \"%s\" je obrisan.\n\n", lastName);
             return;
         }
         previous = temp;
         temp = temp->next;
     }
-    printf("Element s prezimenom \"%s\" nije pronaðen.\n\n", lastName);
+    printf("Element s prezimenom \"%s\" nije pronaï¿½en.\n\n", lastName);
 }
 
-// Dodaje novi èvor iza odreðenog elementa u listi
+// Dodaje novi ï¿½vor iza odreï¿½enog elementa u listi
 void Add_Behind(Node* head, char lastNameSearch[WORD], char name[WORD], char lastName[WORD], int year) {
 
     Node* element = Find_LastName(head, lastNameSearch);  // Pronalazi element iza kojeg se dodaje novi
 
-    Node* newNode = (Node*)malloc(sizeof(Node));         // Alokacija memorije za novi èvor
+    Node* newNode = (Node*)malloc(sizeof(Node));         // Alokacija memorije za novi ï¿½vor
     strcpy(newNode->name, name);
     strcpy(newNode->lastName, lastName);
     newNode->year = year;
 
     if (element == NULL) {
-        return printf("Prezime nije pronaðeno, te nije uspjelo dodavanje clana");  // Ako nije pronaðen, prekida se
+        return printf("Prezime nije pronaï¿½eno, te nije uspjelo dodavanje clana");  // Ako nije pronaï¿½en, prekida se
     }
 
-    newNode->next = element->next;   // Novi èvor pokazuje na sljedeæi element iza pronaðenog
-    element->next = newNode;         // Pronaðeni element pokazuje na novi èvor
+    newNode->next = element->next;   // Novi ï¿½vor pokazuje na sljedeï¿½i element iza pronaï¿½enog
+    element->next = newNode;         // Pronaï¿½eni element pokazuje na novi ï¿½vor
 }
 
-// Dodaje novi èvor ispred odreðenog elementa u listi
+// Dodaje novi ï¿½vor ispred odreï¿½enog elementa u listi
 void Add_Front(Node** head, char lastNameSearch[WORD], char name[WORD], char lastName[WORD], int year) {
 
-    Node* temp = *head;                                 // Pokazivaè na poèetak liste
+    Node* temp = *head;                                 // Pokazivaï¿½ na poï¿½etak liste
     Node* element = Find_LastName(temp, lastNameSearch); // Pronalazi element ispred kojeg se dodaje novi
 
-    Node* newNode = (Node*)malloc(sizeof(Node));        // Alokacija memorije za novi èvor
+    Node* newNode = (Node*)malloc(sizeof(Node));        // Alokacija memorije za novi ï¿½vor
     strcpy(newNode->name, name);
     strcpy(newNode->lastName, lastName);
     newNode->year = year;
 
     if (element == NULL) {
-        return;                                         // Ako nije pronaðen, prekida se
+        return;                                         // Ako nije pronaï¿½en, prekida se
     }
 
     while (temp) {
         if (temp == element) {
-            newNode->next = *head;                      // Novi èvor pokazuje na trenutni poèetak
-            *head = newNode;                            // Novi èvor postaje poèetak liste
+            newNode->next = *head;                      // Novi ï¿½vor pokazuje na trenutni poï¿½etak
+            *head = newNode;                            // Novi ï¿½vor postaje poï¿½etak liste
             return;
         }
-        temp = temp->next;                              // Pomak na sljedeæi element
+        temp = temp->next;                              // Pomak na sljedeï¿½i element
     }
 }
 
@@ -211,56 +211,56 @@ void Add_ToFile(Node* head) {
     FILE* fp = fopen("Lista.txt", "w");                 // Otvara datoteku za pisanje
 
     while (head) {
-        fprintf(fp, "%s %s %d\n", head->name, head->lastName, head->year);  // Upisuje podatke svakog èvora
+        fprintf(fp, "%s %s %d\n", head->name, head->lastName, head->year);  // Upisuje podatke svakog ï¿½vora
         head = head->next;
     }
 
     fclose(fp);                                         // Zatvara datoteku
 }
 
-// Èita listu iz tekstualne datoteke i vraæa pokazivaè na poèetak nove liste
+// ï¿½ita listu iz tekstualne datoteke i vraï¿½a pokazivaï¿½ na poï¿½etak nove liste
 Node* Read_FromFile(Node* head) {
-    FILE* fp = fopen("Lista.txt", "r");                 // Otvara datoteku za èitanje
+    FILE* fp = fopen("Lista.txt", "r");                 // Otvara datoteku za ï¿½itanje
 
-    Node* temp = NULL;                                  // Pokazivaè na poèetak nove liste
-    Node* previous = NULL;                              // Pokazivaè na prethodni èvor
+    Node* temp = NULL;                                  // Pokazivaï¿½ na poï¿½etak nove liste
+    Node* previous = NULL;                              // Pokazivaï¿½ na prethodni ï¿½vor
 
     while (1) {
-        Node* newNode = (Node*)malloc(sizeof(Node));    // Alokacija memorije za novi èvor
+        Node* newNode = (Node*)malloc(sizeof(Node));    // Alokacija memorije za novi ï¿½vor
         if (fscanf(fp, "%s %s %d\n", newNode->name, newNode->lastName, &newNode->year) != 3) {
-            free(newNode);                              // Ako nije uspješno uèitano, prekida se
+            free(newNode);                              // Ako nije uspjeï¿½no uï¿½itano, prekida se
             break;
         }
 
-        newNode->next = NULL;                           // Novi èvor inicijalno ne pokazuje ni na što
+        newNode->next = NULL;                           // Novi ï¿½vor inicijalno ne pokazuje ni na ï¿½to
 
         if (temp == NULL) {
-            temp = newNode;                             // Prvi element postaje poèetak liste
+            temp = newNode;                             // Prvi element postaje poï¿½etak liste
         }
         else {
             previous->next = newNode;                   // Povezuje prethodni s novim
         }
-        previous = newNode;                             // Ažurira prethodni èvor
+        previous = newNode;                             // Aï¿½urira prethodni ï¿½vor
     }
     fclose(fp);                                         // Zatvara datoteku
 
-    return temp;                                        // Vraæa poèetak nove liste
+    return temp;                                        // Vraï¿½a poï¿½etak nove liste
 }
 
 // Sortira listu po prezimenima osoba uzlazno
 Node* Sort(Node* head) {
-    Node* sorted = NULL;                                // Poèetak sortirane liste
+    Node* sorted = NULL;                                // Poï¿½etak sortirane liste
     Node* temp = NULL;
     Node* previous = NULL;
 
     while (head) {
-        temp = head;                                    // Uzimanje trenutnog èvora
-        head = head->next;                              // Pomak na sljedeæi
-        temp->next = NULL;                              // Odvajanje èvora
+        temp = head;                                    // Uzimanje trenutnog ï¿½vora
+        head = head->next;                              // Pomak na sljedeï¿½i
+        temp->next = NULL;                              // Odvajanje ï¿½vora
 
         // Ako je lista prazna ili je prezime manje od prvog u sortiranoj listi
         if (sorted == NULL || strcmp(temp->lastName, sorted->lastName) < 0) {
-            temp->next = sorted;                        // Novi èvor postaje poèetak
+            temp->next = sorted;                        // Novi ï¿½vor postaje poï¿½etak
             sorted = temp;
         }
         else {
@@ -270,18 +270,18 @@ Node* Sort(Node* head) {
             while (loop) {
                 loop = loop->next;
                 if (loop == NULL) {
-                    previous->next = temp;              // Dodaje na kraj ako je najveæe prezime
+                    previous->next = temp;              // Dodaje na kraj ako je najveï¿½e prezime
                     temp->next = NULL;
                 }
                 if (strcmp(temp->lastName, loop->lastName) < 0) {
-                    previous->next = temp;              // Ubacuje izmeðu dva èvora
+                    previous->next = temp;              // Ubacuje izmeï¿½u dva ï¿½vora
                     temp->next = loop;
                     break;
                 }
-                previous = loop;                        // Pomak na sljedeæi
+                previous = loop;                        // Pomak na sljedeï¿½i
             }
         }
     }
 
-    return sorted;                                      // Vraæa sortiranu listu
+    return sorted;                                      // Vraï¿½a sortiranu listu
 }
