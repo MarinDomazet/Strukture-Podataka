@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad5.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\postfix.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\postfix.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\polinomi.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\polinomi.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "postfix.txt",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\postfix.txt",
-              "RelativeDocumentMoniker": "LaboviStrukture\\postfix.txt",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\postfix.txt",
-              "RelativeToolTip": "LaboviStrukture\\postfix.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Title": "polinomi.txt",
+              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\polinomi.txt",
+              "RelativeDocumentMoniker": "LaboviStrukture\\polinomi.txt",
+              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\polinomi.txt",
+              "RelativeToolTip": "LaboviStrukture\\polinomi.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-06T14:55:46.173Z",
+              "WhenOpened": "2025-12-01T15:26:21.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Zad5.c",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad5.c",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Zad5.c",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad5.c",
-              "RelativeToolTip": "LaboviStrukture\\Zad5.c",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAARAAAAAAAAAA==",
+              "Title": "Zad4.c",
+              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad4.c",
+              "RelativeDocumentMoniker": "LaboviStrukture\\Zad4.c",
+              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad4.c",
+              "RelativeToolTip": "LaboviStrukture\\Zad4.c",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-06T14:46:58.251Z",
+              "WhenOpened": "2025-11-07T10:22:12.814Z",
               "EditorCaption": ""
             }
           ]

@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zad5.c" />
+    <ClCompile Include="Zad4.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="postfix.txt" />
+    <Text Include="polinomi.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
