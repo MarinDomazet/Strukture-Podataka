@@ -1,0 +1,5 @@
+2023-08-19
+mlijeko,25,0.99
+sir,12,4.19
+cokolada,9,3.09
+cokolino,3,4.00

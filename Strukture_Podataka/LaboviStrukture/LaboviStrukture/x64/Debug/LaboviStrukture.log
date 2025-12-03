@@ -1,2 +1,7 @@
-﻿  Zad4.c
+﻿  Zad6.c
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zad6.c(204,9): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zad6.c(224,10): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zad6.c(195,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zad6.c(184,1): warning C4715: 'sortDate': not all control paths return a value
+C:\Users\marin\Strukture_Podataka\LaboviStrukture\LaboviStrukture\Zad6.c(148,1): warning C4715: 'sortName': not all control paths return a value
   LaboviStrukture.vcxproj -> C:\Users\marin\Strukture_Podataka\LaboviStrukture\x64\Debug\LaboviStrukture.exe

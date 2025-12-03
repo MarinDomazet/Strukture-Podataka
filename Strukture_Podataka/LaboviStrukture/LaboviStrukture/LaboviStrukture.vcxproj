@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zad4.c" />
+    <ClCompile Include="Zad6.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="polinomi.txt" />
+    <Text Include="ListaRacuna.txt" />
+    <Text Include="Racun1.txt" />
+    <Text Include="Racun2.txt" />
+    <Text Include="Racun3.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

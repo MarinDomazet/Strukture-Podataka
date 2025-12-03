@@ -15,12 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zad4.c">
+    <ClCompile Include="Zad6.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="polinomi.txt">
+    <Text Include="ListaRacuna.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Racun1.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Racun2.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Racun3.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
