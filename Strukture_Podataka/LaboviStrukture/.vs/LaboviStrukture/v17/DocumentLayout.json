@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Racun1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun3.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Racun3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Racun2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\ListaRacuna.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\ListaRacuna.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Zad6.c",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad6.c",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Zad6.c",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad6.c",
-              "RelativeToolTip": "LaboviStrukture\\Zad6.c",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFYAAAAiAAAAAAAAAA==",
+              "Title": "Zad7.c",
+              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c",
+              "RelativeDocumentMoniker": "LaboviStrukture\\Zad7.c",
+              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c",
+              "RelativeToolTip": "LaboviStrukture\\Zad7.c",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-03T10:40:59.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Racun3.txt",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun3.txt",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Racun3.txt",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun3.txt",
-              "RelativeToolTip": "LaboviStrukture\\Racun3.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-03T10:41:53.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Racun2.txt",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun2.txt",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Racun2.txt",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun2.txt",
-              "RelativeToolTip": "LaboviStrukture\\Racun2.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-03T10:41:44.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Racun1.txt",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun1.txt",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Racun1.txt",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Racun1.txt",
-              "RelativeToolTip": "LaboviStrukture\\Racun1.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-03T10:41:36.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ListaRacuna.txt",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\ListaRacuna.txt",
-              "RelativeDocumentMoniker": "LaboviStrukture\\ListaRacuna.txt",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\ListaRacuna.txt",
-              "RelativeToolTip": "LaboviStrukture\\ListaRacuna.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-03T10:41:17.155Z",
+              "WhenOpened": "2025-12-19T17:19:46.221Z",
               "EditorCaption": ""
             }
           ]
