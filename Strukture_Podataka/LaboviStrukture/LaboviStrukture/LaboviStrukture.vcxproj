@@ -26,6 +26,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zad7.c" />
+    <ClCompile Include="Zad8.c" />
+    <ClCompile Include="Zad9.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

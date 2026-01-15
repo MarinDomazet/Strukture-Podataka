@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF71D429-44E3-4C92-A09D-81B27BEB4BF5}|LaboviStrukture\\LaboviStrukture.vcxproj|solutionrelative:LaboviStrukture\\Zad8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Zad7.c",
-              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c",
-              "RelativeDocumentMoniker": "LaboviStrukture\\Zad7.c",
-              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad7.c",
-              "RelativeToolTip": "LaboviStrukture\\Zad7.c",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGwAAAAFAAAAAAAAAA==",
+              "Title": "Zad9.c",
+              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad9.c",
+              "RelativeDocumentMoniker": "LaboviStrukture\\Zad9.c",
+              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad9.c",
+              "RelativeToolTip": "LaboviStrukture\\Zad9.c",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-19T17:19:46.221Z",
+              "WhenOpened": "2026-01-15T08:34:59.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Zad8.c",
+              "DocumentMoniker": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad8.c",
+              "RelativeDocumentMoniker": "LaboviStrukture\\Zad8.c",
+              "ToolTip": "C:\\Users\\marin\\Strukture_Podataka\\LaboviStrukture\\LaboviStrukture\\Zad8.c",
+              "RelativeToolTip": "LaboviStrukture\\Zad8.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-15T08:34:46.131Z",
               "EditorCaption": ""
             }
           ]
